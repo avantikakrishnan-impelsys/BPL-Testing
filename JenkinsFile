@@ -1,0 +1,33 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('List Files') {
+            steps {
+                sh 'ls -R'
+            }
+        }
+
+        stage('Validate HTML Exists') {
+            steps {
+                sh '''
+                    test -f htmls/products.html
+                    echo "products.html found"
+                '''
+            }
+        }
+
+        stage('Done') {
+            steps {
+                echo 'Frontend pipeline completed successfully'
+            }
+        }
+    }
+}
