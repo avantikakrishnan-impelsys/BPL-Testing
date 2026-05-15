@@ -34,10 +34,10 @@ wp-config-sample.php
 wp-content/themes/*
 
 # Allow Only Custom Theme
-!wp-content/themes/bplactive/
+!wp-content/themes/twentytwentyfive/
 
 # Allow Theme Files
-!wp-content/themes/bplactive/**
+!wp-content/themes/twentytwentyfive/**
 
 # =========================
 # Ignore Plugins
