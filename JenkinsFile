@@ -19,7 +19,7 @@ pipeline {
             steps {
                 sh '''
                     test -f htmls/products.html
-                    echo "products.html found"
+                    echo "products.html found yay"
                 '''
             }
         }
